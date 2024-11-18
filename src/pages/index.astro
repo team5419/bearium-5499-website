@@ -1,9 +1,46 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout title="Bearium 5499">
 	<main>
+    <header class="h-32 bg-primary relative flex justify-between">
+      <nav class="h-full w-full flex justify-between px-10 items-center font-bold text-white pb-6">
+        <a
+          href="/"
+          class="aspect-square w-12 border-white border-4 rounded-lg flex justify-center items-center text-2xl hover:scale-105 active:scale-100 duration-150"
+        >
+          Ba
+        </a>
 
+        <div class="space-x-12 text-lg">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/gallery">Gallery</a>
+        </div>
+
+        <div class="flex gap-4 text-xl">
+          <a
+            href="https://www.instagram.com/bearium5499/"
+            class="flex justify-center items-center aspect-square w-10 rounded-full border-white border-4 hover:scale-105 active:scale-100 duration-150"
+          >
+            <Icon name="mdi:instagram" />
+          </a>
+          <a
+            href="https://github.com/team5419/"
+            class="flex justify-center items-center aspect-square w-10 rounded-full border-white border-4 hover:scale-105 active:scale-100 duration-150"
+          >
+            <Icon name="mdi:github" />
+          </a>
+        </div>
+      </nav>
+
+      <!-- Wavy -->
+      <div
+        style="background-image: url('/wave.svg')"
+        class="bg-repeat-x w-full h-10 absolute -bottom-2"
+      ></div>
+    </header>
   </main>
 </Layout>
